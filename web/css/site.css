@@ -1,0 +1,392 @@
+@font-face {
+	src: url('../css/fonts/fontawesome-webfont.ttf') format("opentype");
+	/*src: url('../css/fonts/fa-regular-400.ttf') format("opentype");*/
+	font-family: "FontAwesome";
+}
+
+html,
+body {
+    height: 100%;
+}
+h1 {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+input, button, select, textarea {
+    outline: none;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+table.item-list {
+    width: 800px;
+    margin: auto;
+}
+table.item-list tr {
+    
+}
+table.item-list tr:not(.t-head):hover {
+    
+    background-color: #e6e6e6;
+}
+table.item-list tr:nth-child(even) {
+    background-color: #eee;
+    
+}
+table.item-list tr > * {
+    /*width: 33%;*/
+    padding: 5px;
+}
+table.item-list th {
+    text-align: center;
+    
+}
+table.item-list th:hover {
+    background-color: transparent;
+}
+table.item-list td {
+    cursor: pointer;
+}
+table.item-list td:hover {
+}
+table.item-list tr td:first-child {
+    width: 50%;
+}
+table.item-list tr >.ui {
+    width: 110px;
+}
+
+table.item-list td.ui button {
+    width: 30px;
+    height: 30px;
+    font-family: 'FontAwesome';
+    padding: 0;
+   
+}
+table.item-list td.ui button  a {
+    padding: 5px;
+    text-decoration: none;
+    color: initial;
+}
+
+.pagination-wrap {
+    text-align: center;
+}
+ a.create {
+    background-color: #efefef;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    width: 120px;
+
+}
+input.search {
+    width: 200px;
+    height: 40px;
+}
+#searchlist {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    top: 40px;
+}
+#searchlist ul {
+    margin: 0;
+    padding: 0;
+}
+#searchlist ul li:hover {
+    background-color: #e6e6e6;
+}
+#searchlist ul a {
+    padding: 5px 10px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+
+}
+.site-index .toolbar {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/********
+view
+********/
+.product-wrap {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    box-shadow: 0 0 5px #00000038;
+}
+.product-wrap .i-img {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
+.product-wrap .i-img img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.product-wrap .product-info {
+    width: calc(100% - 200px);
+    padding-left: 20px;
+    background-color: #eff8f973;
+    padding-bottom: 50px;
+    /*padding-top: 20px;*/
+}
+.product-wrap p {
+    margin: 0;
+}
+.product-wrap p.p-title {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.product-wrap p.p-text.ingr {
+    margin-bottom: 5px;
+    line-height: 1;
+}
+.product-wrap span.i-name {
+    width: 150px;
+    display: inline-block;
+    padding-right: 20px;
+}
+.product-info button.edit {
+    color: #000;
+    text-decoration: none;
+}
+.product-info button.edit:hover {
+     text-decoration: none;
+   
+}
+/******
+_form
+******/
+.product-wrap input, .product-wrap select, .product-wrap textarea, .product-wrap button {
+    border: 1px solid #cccccc;
+}
+.product-wrap .error {
+    border-color: red;
+}
+.product-wrap input {
+    background-color: #fff;
+    height: 30px;
+    padding: 5px;
+}
+.product-wrap select {
+    height: 30px;
+    
+}
+.product-wrap textarea {
+    width: 422px;
+    resize: none;
+}
+.product-wrap button {
+    width: 120px;
+    height: 30px;
+}
+.i-img .buttonsImg {
+    width: 120px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.i-img .field-items-img label {
+    display: none;
+}
+.i-img button#selectImg {
+    width: 100%;
+    height: 100%;
+}
+.i-img input#items-img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.product-info .ingredients {
+    width: 422px;
+}
+.product-info .ingredient {
+    margin-bottom: 10px;
+}
+.product-info label {
+    display: block;
+    margin-top: 20px;
+}
+.product-info input#items-title, .product-info select, .product-info input#diment, .product-info input.ingre {
+    width: 300px;
+}
+.product-info input.count {
+    width: 50px;
+}
+.product-info input.diment {
+    width: 30px;
+}
+.product-info button.add-ing-new {
+    width: auto;
+}
+.product-info button.del-ing, .product-info button.add-ing {
+    font-family: 'FontAwesome';
+    width: 30px;
+    float: right;
+}
+.product-info button.del-ing {
+    color: #8a6d3b;
+}
+.product-info button.add-ing {
+    color: #9c96ce;
+}
+.product-info button[type=submit], .product-info button.edit {
+    display: block;
+    margin-top: 50px;
+}
+
+/********
+index
+*********/
+.stand {
+    width: 800px;
+    margin: 0 auto;
+}
+.stand h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.stand .command-row {
+    margin-bottom: 30px;
+}
+.stand .command-row button {
+    display: block;
+}
+.stand textarea {
+    resize: none;
+    font-family: monospace;
+    height: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
